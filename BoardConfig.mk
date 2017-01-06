@@ -172,6 +172,9 @@ TARGET_USE_SDCLANG := true
 # Voltage
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
+# SDClang
+include device/qcom/common/common.mk
+
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
 BOARD_HAS_QCOM_WLAN_SDK          := true
