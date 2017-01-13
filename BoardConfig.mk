@@ -169,6 +169,9 @@ BOARD_SEPOLICY_DIRS += \
 # Snapdragon LLVM
 TARGET_USE_SDCLANG := true
 
+# Voltage
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
 BOARD_HAS_QCOM_WLAN_SDK          := true
